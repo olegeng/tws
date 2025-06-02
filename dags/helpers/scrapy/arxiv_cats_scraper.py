@@ -28,4 +28,3 @@ def run_scraper():
 if __name__ == '__main__':
     print("For testing module")
     data = run_scraper()
-    # print
