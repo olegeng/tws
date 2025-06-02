@@ -1,0 +1,2 @@
+postgres:5432:airflow:airflow:airflow
+datastore:5432:datastore:user:password

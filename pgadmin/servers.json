@@ -1,0 +1,24 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Airflow DB",
+      "Group": "Local",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "airflow",
+      "Username": "airflow",
+      "Password": "airflow",
+      "SSLMode": "prefer"
+    },
+    "2": {
+      "Name": "DataStore",
+      "Group": "Local",
+      "Host": "datastore",
+      "Port": 5432,
+      "MaintenanceDB": "datastore",
+      "Username": "user",
+      "Password": "password",
+      "SSLMode": "prefer"
+    }
+  }
+}

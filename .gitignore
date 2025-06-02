@@ -1,0 +1,13 @@
+# ─── Python virtual environments ───────────────────────────────
+venv/
+.venv/
+ENV/
+env/
+*/venv/
+*/.venv/
+
+# ─── Python byte-code та кеші ──────────────────────────────────
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
