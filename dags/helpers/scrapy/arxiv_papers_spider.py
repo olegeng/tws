@@ -17,10 +17,10 @@ class ArxivPapersSpider(Spider):
         super().__init__(*args, **kwargs)
         self.categories = categories or []
         self.batch_size = 1000
-        self.max_total = 500000
+        self.max_total = 5000
 
     def start_requests(self):
-        for category_id in self.categories.keys():
+        for category_id in self.categories:
             for start in range(0, self.max_total, self.batch_size):
                 url = (
                     f"http://export.arxiv.org/api/query?"
@@ -55,6 +55,8 @@ class ArxivPapersSpider(Spider):
 
 def run_scraper(categories):
     logging.info(f"Type: {type(categories)}")
+    logging.info(f"Len cats: {len(categories)}")
+    logging.info(categories)
 
     results = []
 
